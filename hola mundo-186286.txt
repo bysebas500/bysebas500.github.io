@@ -5,7 +5,7 @@
     <title>Unidad 1 | Actividad 01</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="utf-8">
-    <meta name="Autor" content="Conde Corpus Jose Daniel">
+    <meta name="Autor" content="Esquivel Ortiz Sebastian">
     <meta name="Fecha" content="Miércoles 05 de Febrero de 2025">
     <meta name="Descripción" content="Hola mundo">
 </head>
