@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Información de Shrek</title>
+<style>
+  .miembro-banda {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .info-miembro {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+ 
+  <h1>El Universo de Shrek</h1>
+ 
+  <p>El universo de Shrek es un mundo de fantasía lleno de personajes de cuentos de hadas y criaturas mágicas. La historia sigue a Shrek, un ogro solitario, que se embarca en una aventura para rescatar a la princesa Fiona del malvado Lord Farquaad. A lo largo del camino, Shrek se hace amigo de un burro parlanchín y conoce a otros personajes memorables.</p>
+ 
+  <h2>Personajes de Shrek</h2>
+ 
+  <div class="miembro-banda" onclick="mostrarInformacion('shrek')">Shrek</div>
+  <div id="info-shrek" class="info-miembro">
+    <h2>Shrek</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>Shrek</td>
+      </tr>
+      <tr>
+        <th>Especie</th>
+        <td>Ogro</td>
+      </tr>
+      <tr>
+        <th>Edad</th>
+        <td>Desconocida</td>
+      </tr>
+      <tr>
+        <th>Ocupación</th>
+        <td>Héroe, esposo de Fiona</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>Un ogro de gran corazón que aprende a aceptar y amar su singularidad.</td>
+      </tr>
+    </table>
+    <img src="https://th.bing.com/th/id/OIP.H88aKb7tUCF3XycKwqHjFgHaEK?rs=1&pid=ImgDetMain" alt="Shrek" style="max-width: 200px;">
+  </div>
+ 
+  <div class="miembro-banda" onclick="mostrarInformacion('fiona')">Fiona</div>
+  <div id="info-fiona" class="info-miembro">
+    <h2>Fiona</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>Princesa Fiona</td>
+      </tr>
+      <tr>
+        <th>Especie</th>
+        <td>Humana/Ogra</td>
+      </tr>
+      <tr>
+        <th>Edad</th>
+        <td>Desconocida</td>
+      </tr>
+      <tr>
+        <th>Ocupación</th>
+        <td>Princesa, esposa de Shrek</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>Una princesa que sufre una maldición y encuentra el verdadero amor con Shrek.</td>
+      </tr>
+    </table>
+    <img src="https://th.bing.com/th/id/OIP.zTQ35PijLbTOetAgvOoMiwHaJ4?rs=1&pid=ImgDetMain" alt="Fiona" style="max-width: 200px;">
+  </div>
+ 
+  <div class="miembro-banda" onclick="mostrarInformacion('burro')">Burro</div>
+  <div id="info-burro" class="info-miembro">
+    <h2>Burro</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>Burro</td>
+      </tr>
+      <tr>
+        <th>Especie</th>
+        <td>Burro</td>
+      </tr>
+      <tr>
+        <th>Edad</th>
+        <td>Desconocida</td>
+      </tr>
+      <tr>
+        <th>Ocupación</th>
+        <td>Mejor amigo de Shrek</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>Un burro parlanchín y leal que acompaña a Shrek en sus aventuras.</td>
+      </tr>
+    </table>
+    <img src="https://th.bing.com/th/id/R.16e32136520fad62058816e0213e4401?rik=BkQ8gxGvy7WXeQ&riu=http%3a%2f%2fimages2.wikia.nocookie.net%2f__cb20100916035860%2fdoblaje%2fes%2fimages%2f6%2f66%2fBurro-shrek1.jpg&ehk=%2flnMV2unvC8NzqeGDjqEcuwcdP%2bii0gx0yEBr%2fc%2fxu4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Burro" style="max-width: 200px;">
+  </div>
+ 
+  <div class="miembro-banda" onclick="mostrarInformacion('farquaad')">Lord Farquaad</div>
+  <div id="info-farquaad" class="info-miembro">
+    <h2>Lord Farquaad</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>Lord Farquaad</td>
+      </tr>
+      <tr>
+        <th>Especie</th>
+        <td>Humano</td>
+      </tr>
+      <tr>
+        <th>Edad</th>
+        <td>Desconocida</td>
+      </tr>
+      <tr>
+        <th>Ocupación</th>
+        <td>Gobernante de Duloc (anteriormente)</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>Un gobernante bajito y tiránico con un complejo de inferioridad.</td>
+      </tr>
+    </table>
+    <img src="https://i.pinimg.com/736x/35/93/ac/3593acb0b8f9d75704f5a0778c693e73.jpg" alt="Lord Farquaad" style="max-width: 200px;">
+  </div>
+ 
+  <div class="miembro-banda" onclick="mostrarInformacion('gato')">El Gato con Botas</div>
+  <div id="info-gato" class="info-miembro">
+    <h2>El Gato con Botas</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>El Gato con Botas</td>
+      </tr>
+      <tr>
+        <th>Especie</th>
+        <td>Gato</td>
+      </tr>
+      <tr>
+        <th>Edad</th>
+        <td>Desconocida</td>
+      </tr>
+      <tr>
+        <th>Ocupación</th>
+        <td>Aventurero, espadachín</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>Un felino astuto y habilidoso con una mirada enternecedora.</td>
+      </tr>
+    </table>
+    <img src="https://cinepremiere.com.mx/wp-content/uploads/2023/02/antonio-banderas-gato-con-botas-carrusel-600x338.jpg" alt="El Gato con Botas" style="max-width: 200px;">
+  </div>
+ 
+  <script>
+    function mostrarInformacion(id) {
+      let infoMiembros = document.getElementsByClassName('info-miembro');
+      for (let i = 0; i < infoMiembros.length; i++) {
+        infoMiembros[i].style.display = 'none';
+      }
+      document.getElementById('info-' + id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
