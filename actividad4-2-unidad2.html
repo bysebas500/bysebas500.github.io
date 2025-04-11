@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Información de Shrek</title>
+<title>Actividad 4.2 (lista, tabla e imagen)</title>
 <style>
   .miembro-banda {
     cursor: pointer;
@@ -12,9 +12,11 @@
     border: 1px solid #ccc;
     padding: 10px;
     margin-top: 5px;
+    display: flex; /* Usamos flexbox para alinear tabla e imagen */
+    align-items: flex-start; /* Alinea los elementos al inicio */
   }
   table {
-    width: 100%;
+    width: 60%; /* Reducimos el ancho de la tabla */
     border-collapse: collapse;
   }
   th, td {
@@ -25,19 +27,22 @@
   th {
     background-color: #f2f2f2;
   }
+  .info-miembro img {
+    max-width: 200px;
+    margin-left: 20px; /* Espacio entre la tabla y la imagen */
+  }
 </style>
 </head>
 <body>
- 
+  
   <h1>El Universo de Shrek</h1>
- 
+  
   <p>El universo de Shrek es un mundo de fantasía lleno de personajes de cuentos de hadas y criaturas mágicas. La historia sigue a Shrek, un ogro solitario, que se embarca en una aventura para rescatar a la princesa Fiona del malvado Lord Farquaad. A lo largo del camino, Shrek se hace amigo de un burro parlanchín y conoce a otros personajes memorables.</p>
- 
+  
   <h2>Personajes de Shrek</h2>
- 
+  
   <div class="miembro-banda" onclick="mostrarInformacion('shrek')">Shrek</div>
   <div id="info-shrek" class="info-miembro">
-    <h2>Shrek</h2>
     <table>
       <tr>
         <th>Nombre</th>
@@ -60,12 +65,11 @@
         <td>Un ogro de gran corazón que aprende a aceptar y amar su singularidad.</td>
       </tr>
     </table>
-    <img src="https://i.pinimg.com/736x/94/fd/45/94fd4544f5d1de36744e7272a9bd4a51.jpg" alt="Shrek" style="max-width: 200px;">
+    <img src="https://i.pinimg.com/736x/94/fd/45/94fd4544f5d1de36744e7272a9bd4a51.jpg" alt="Shrek">
   </div>
- 
+  
   <div class="miembro-banda" onclick="mostrarInformacion('fiona')">Fiona</div>
   <div id="info-fiona" class="info-miembro">
-    <h2>Fiona</h2>
     <table>
       <tr>
         <th>Nombre</th>
@@ -88,12 +92,11 @@
         <td>Una princesa que sufre una maldición y encuentra el verdadero amor con Shrek.</td>
       </tr>
     </table>
-    <img src="https://www.sdpnoticias.com/resizer/mRSoDagEdNnl-NrU3v2Or8iyiok=/1280x1280/filters:format(jpg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/sdpnoticias/KLRVE2LFTJH4TAMBBYPVMWSWXQ.jpeg" alt="Fiona" style="max-width: 200px;">
+    <img src="https://www.sdpnoticias.com/resizer/mRSoDagEdNnl-NrU3v2Or8iyiok=/1280x1280/filters:format(jpg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/sdpnoticias/KLRVE2LFTJH4TAMBBYPVMWSWXQ.jpeg" alt="Fiona">
   </div>
- 
+  
   <div class="miembro-banda" onclick="mostrarInformacion('burro')">Burro</div>
   <div id="info-burro" class="info-miembro">
-    <h2>Burro</h2>
     <table>
       <tr>
         <th>Nombre</th>
@@ -116,12 +119,11 @@
         <td>Un burro parlanchín y leal que acompaña a Shrek en sus aventuras.</td>
       </tr>
     </table>
-    <img src="https://i.pinimg.com/originals/37/f2/40/37f24020d9dd8ba1bec78a95aea974da.jpg" alt="Burro" style="max-width: 200px;">
+    <img src="https://i.pinimg.com/originals/37/f2/40/37f24020d9dd8ba1bec78a95aea974da.jpg" alt="Burro">
   </div>
- 
+  
   <div class="miembro-banda" onclick="mostrarInformacion('farquaad')">Lord Farquaad</div>
   <div id="info-farquaad" class="info-miembro">
-    <h2>Lord Farquaad</h2>
     <table>
       <tr>
         <th>Nombre</th>
@@ -144,12 +146,11 @@
         <td>Un gobernante bajito y tiránico con un complejo de inferioridad.</td>
       </tr>
     </table>
-    <img src="https://th.bing.com/th/id/OIP.aMjb-q6NL0MyZ9mwLMYD-wAAAA?pid=ImgDet&w=320&h=396&rs=1" alt="Lord Farquaad" style="max-width: 200px;">
+    <img src="https://th.bing.com/th/id/OIP.aMjb-q6NL0MyZ9mwLMYD-wAAAA?pid=ImgDet&w=320&h=396&rs=1" alt="Lord Farquaad">
   </div>
- 
+  
   <div class="miembro-banda" onclick="mostrarInformacion('gato')">El Gato con Botas</div>
   <div id="info-gato" class="info-miembro">
-    <h2>El Gato con Botas</h2>
     <table>
       <tr>
         <th>Nombre</th>
@@ -172,16 +173,16 @@
         <td>Un felino astuto y habilidoso con una mirada enternecedora.</td>
       </tr>
     </table>
-    <img src="https://preview.redd.it/hombres-cual-es-una-red-flag-de-ustedes-v0-q460maez7qea1.jpg?auto=webp&s=2e825d2108b3fb0321925a06bc138987878d80aa" alt="El Gato con Botas" style="max-width: 200px;">
+    <img src="https://preview.redd.it/hombres-cual-es-una-red-flag-de-ustedes-v0-q460maez7qea1.jpg?auto=webp&s=2e825d2108b3fb0321925a06bc138987878d80aa" alt="El Gato con Botas">
   </div>
- 
+  
   <script>
     function mostrarInformacion(id) {
       let infoMiembros = document.getElementsByClassName('info-miembro');
       for (let i = 0; i < infoMiembros.length; i++) {
         infoMiembros[i].style.display = 'none';
       }
-      document.getElementById('info-' + id).style.display = 'block';
+      document.getElementById('info-' + id).style.display = 'flex'; // Cambiamos a flex para mostrar los elementos en línea
     }
   </script>
 
