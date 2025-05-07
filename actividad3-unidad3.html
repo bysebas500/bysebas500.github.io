@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 3 | Actividad 03</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Sebastián Esquivel Ortiz">
+    <meta name="Fecha" content="30 de abril de 2025">
+    <meta name="Descripción" content="JavaScript">
+</head>
+<body>
+    <h1>Unidad 3 | Actividad 03 :: Tema (JavaScript)</h1>
+    <script>
+        let opc = window.prompt("Menú de opciones:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n¿Qué opción deseas?");
+        let val_1 = Number(window.prompt("Dame el primer valor:"));
+        let val_2 = Number(window.prompt("Dame el segundo valor:"));
+        let topic;
+
+        switch (opc) {
+            case "1": // Sumar
+                topic = "Operación Suma";
+                document.write("<h3>" + topic + "</h3>");
+                document.write("<code>" + val_1 + " + " + val_2 + " = " + (val_1 + val_2) + "</code>");
+                break;
+            case "2": // Restar
+                topic = "Operación Resta";
+                document.write("<h3>" + topic + "</h3>");
+                document.write("<code>" + val_1 + " - " + val_2 + " = " + (val_1 - val_2) + "</code>");
+                break;
+            case "3": // Multiplicar
+                topic = "Operación Multiplica";
+                document.write("<h3>" + topic + "</h3>");
+                document.write("<code>" + val_1 + " * " + val_2 + " = " + (val_1 * val_2) + "</code>");
+                break;
+            case "4": // Dividir
+                topic = "Operación Divide";
+                document.write("<h3>" + topic + "</h3>");
+                document.write("<code>" + val_1 + " / " + val_2 + " = " + (val_1 / val_2) + "</code>");
+                break;
+            default:
+                document.write("<h3>Opción inválida</h3>");
+                document.write("<p>Por favor, elige una opción del menú (1-4).</p>");
+        }
+    </script>
+</body>
+</html>
