@@ -1,1 +1,1537 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Descripción" content="Portada del Proyecto">
+    <meta name="author" content="CONDE CORPUS JOSE DANIEL">
+    <meta name="author" content="ESQUIVEL ORTIZ SEBASTIAN">
+    <title>HALO - Portada</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/halo" rel="stylesheet">
+    <style>
+      body {
+        background-size: cover;
+        background-image: url("https://images.hdqwalls.com/wallpapers/halo-infinite-4k-2020-5k.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+      }
+
+      h1 {
+        color: white;
+        font-size: 70px;
+        font-family: "Tourney", sans-serif;
+        font-weight: 300;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      h2, h3 {
+        font-family: 'Halo', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #00ff00;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .content-section {
+        background-color: rgba(110, 110, 110, 0.60);
+        border-radius: 40px;
+        box-shadow: 10px 10px rgba(0, 56, 0, 0.397);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .img-thumbnail {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        margin: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .img-thumbnail:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+      }
+
+      .nav-link {
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #0f0 !important;
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+      }
+
+      .btn-halo {
+        background-color: rgba(0, 56, 0, 0.7);
+        border: 1px solid #0f0;
+        color: white;
+        transition: all 0.3s;
+      }
+
+      .btn-halo:hover {
+        background-color: rgba(0, 100, 0, 0.9);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+      }
+
+      table {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      table th {
+        background-color: rgba(0, 56, 0, 0.7);
+      }
+
+      table tr:nth-child(even) {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      table tr:hover {
+        background-color: rgba(0, 80, 0, 0.5);
+      }
+
+      .list-group-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .list-group-item:hover {
+        background-color: rgba(0, 56, 0, 0.5);
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 100px 0;
+        margin: 3rem 0;
+      }
+
+      .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .typewriter h2 {
+        overflow: hidden;
+        border-right: .15em solid #0f0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #0f0; }
+      }
+
+      .personajes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .personaje {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+      }
+
+      .personaje-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <a><h1 class="pulse-animation">HALO</h1></a>
+        <div>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0" href="Referencias.html">Referencias</a>
+            <a class="nav-link fw-bold py-1 px-0" href="Contactos.html">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-1">
+        <!-- Sección Portada -->
+        <section id="portada" class="content-section fade-in">
+          <div class="typewriter">
+            <h2>Bienvenido al Universo de Halo</h2>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <p>Halo es una saga de videojuegos de ciencia ficción desarrollada originalmente por Bungie Studios y actualmente por 343 Industries, publicada por Microsoft Studios.</p>
+              <p>La serie se centra en un conflicto futurista entre humanos y el Covenant, una alianza teocrática de especies alienígenas que venera a los Forerunner y sus misteriosos "Anillos Sagrados".</p>
+              <p>El protagonista principal es el Jefe Maestro (Master Chief), un supersoldado genéticamente mejorado que lucha para salvar a la humanidad de múltiples amenazas.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/ef/b9/ce/efb9ce7e2cbfaa40b437060d263fa8d9.jpg" alt="Master Chief" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/3453432.jpg" alt="Covenant" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-4">
+              <p>El Covenant es una alianza teocrática de especies alienígenas que buscan activar los anillos Halo, sin comprender su verdadero propósito como arma galáctica.</p>
+              <p>Los juegos combinan elementos de shooter en primera persona con narrativa épica, vehículos y combate multijugador.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://www.somosxbox.com/wp-content/uploads/2020/02/HaloInfinite.jpg" alt="Anillo Halo" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <p class="lead mt-4">
+            <a href="https://www.halopedia.org/" target="_blank" class="btn btn-lg btn-halo">Explorar el Universo Halo en Halopedia</a>
+          </p>
+        </section>
+
+        <!-- Sección Contenido Destacado -->
+        <section id="destacado" class="content-section">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Juegos Principales</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Halo: Combat Evolved (2001) - El juego que inició la franquicia</li>
+                <li class="list-group-item">Halo 2 (2004) - Introdujo el juego en línea en Xbox Live</li>
+                <li class="list-group-item">Halo 3 (2007) - Conclusión de la trilogía original</li>
+                <li class="list-group-item">Halo Wars (2009) - Primer juego de estrategia en tiempo real</li>
+                <li class="list-group-item">Halo 3: ODST (2009) - Perspectiva de soldados regulares</li>
+                <li class="list-group-item">Halo: Reach (2010) - Precuela que muestra la caída de Reach</li>
+                <li class="list-group-item">Halo 4 (2012) - Primera entrega desarrollada por 343 Industries</li>
+                <li class="list-group-item">Halo 5: Guardians (2015) - Introdujo el escuadrón Fireteam Osiris</li>
+                <li class="list-group-item">Halo Infinite (2021) - Última entrega principal</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Personajes Iconicos</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
+                  <a href="Master%20Chief.html" class="text-success">Master Chief (John-117) - Protagonista principal</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Cortana.html" class="text-success">Cortana - IA compañera del Jefe Maestro</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="El%20Inquisidor.html" class="text-success">El Inquisidor (Thel 'Vadam) - Aliado clave</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Dra.%20Halsey.html" class="text-success">Dra. Halsey - Creadora del programa SPARTAN-II</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Escharum.html" class="text-success">Escharum - Antagonista principal en Halo Infinite</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <h3>Línea de Tiempo de la Saga</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Año</th>
+                    <th>Evento</th>
+                    <th>Juego/Medio</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2525</td>
+                    <td>Inicio de la Guerra Humano-Covenant</td>
+                    <td>Halo Wars</td>
+                    <td>El Covenant ataca las colonias humanas exteriores</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Caída de Reach</td>
+                    <td>Halo: Reach</td>
+                    <td>El planeta Reach es destruido por el Covenant</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Descubrimiento del Instalación 04</td>
+                    <td>Halo: Combat Evolved</td>
+                    <td>El Jefe Maestro descubre el primer anillo Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla por la Tierra</td>
+                    <td>Halo 2</td>
+                    <td>El Covenant ataca la Tierra mientras el Jefe viaja a Delta Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla del Arca</td>
+                    <td>Halo 3</td>
+                    <td>El Jefe y el Inquisidor detienen al Profeta de la Verdad</td>
+                  </tr>
+                  <tr>
+                    <td>2557</td>
+                    <td>Despertar en Requiem</td>
+                    <td>Halo 4</td>
+                    <td>El Jefe despierta después de 4 años en el espacio</td>
+                  </tr>
+                  <tr>
+                    <td>2558</td>
+                    <td>Activación de los Guardianes</td>
+                    <td>Halo 5: Guardians</td>
+                    <td>Cortana reaparece con una nueva filosofía de gobierno</td>
+                  </tr>
+                  <tr>
+                    <td>2560</td>
+                    <td>Batalla de Zeta Halo</td>
+                    <td>Halo Infinite</td>
+                    <td>El Jefe se enfrenta a los Desterrados en un anillo dañado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Multimedia -->
+        <section id="multimedia" class="content-section">
+          <h2>Multimedia</h2>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Tráiler de Halo Infinite</h3>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/PyMlV5_HRWk" title="Halo Infinite Trailer" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Galería de Imágenes</h3>
+              <div id="haloCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGdPb4ux0Vh-pdgIM4FDbXetjjUJGmoISZA&s" class="d-block w-100" alt="Master Chief">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.redd.it/the-flood-from-halo-1-are-my-favorite-incarnation-the-v0-mbm8bsly9q6e1.jpg?width=2560&format=pjpg&auto=webp&s=8d3c17670c3bc99546c41b8f9b800a3ea7cf13be<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Descripción" content="Portada del Proyecto">
+    <meta name="author" content="CONDE CORPUS JOSE DANIEL">
+    <meta name="author" content="ESQUIVEL ORTIZ SEBASTIAN">
+    <title>HALO - Portada</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/halo" rel="stylesheet">
+    <style>
+      body {
+        background-size: cover;
+        background-image: url("https://images.hdqwalls.com/wallpapers/halo-infinite-4k-2020-5k.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+      }
+
+      h1 {
+        color: white;
+        font-size: 70px;
+        font-family: "Tourney", sans-serif;
+        font-weight: 300;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      h2, h3 {
+        font-family: 'Halo', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #00ff00;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .content-section {
+        background-color: rgba(110, 110, 110, 0.60);
+        border-radius: 40px;
+        box-shadow: 10px 10px rgba(0, 56, 0, 0.397);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .img-thumbnail {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        margin: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .img-thumbnail:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+      }
+
+      .nav-link {
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #0f0 !important;
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+      }
+
+      .btn-halo {
+        background-color: rgba(0, 56, 0, 0.7);
+        border: 1px solid #0f0;
+        color: white;
+        transition: all 0.3s;
+      }
+
+      .btn-halo:hover {
+        background-color: rgba(0, 100, 0, 0.9);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+      }
+
+      table {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      table th {
+        background-color: rgba(0, 56, 0, 0.7);
+      }
+
+      table tr:nth-child(even) {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      table tr:hover {
+        background-color: rgba(0, 80, 0, 0.5);
+      }
+
+      .list-group-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .list-group-item:hover {
+        background-color: rgba(0, 56, 0, 0.5);
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 100px 0;
+        margin: 3rem 0;
+      }
+
+      .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .typewriter h2 {
+        overflow: hidden;
+        border-right: .15em solid #0f0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #0f0; }
+      }
+
+      .personajes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .personaje {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+      }
+
+      .personaje-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <a><h1 class="pulse-animation">HALO</h1></a>
+        <div>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0" href="Referencias.html">Referencias</a>
+            <a class="nav-link fw-bold py-1 px-0" href="Contactos.html">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-1">
+        <!-- Sección Portada -->
+        <section id="portada" class="content-section fade-in">
+          <div class="typewriter">
+            <h2>Bienvenido al Universo de Halo</h2>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <p>Halo es una saga de videojuegos de ciencia ficción desarrollada originalmente por Bungie Studios y actualmente por 343 Industries, publicada por Microsoft Studios.</p>
+              <p>La serie se centra en un conflicto futurista entre humanos y el Covenant, una alianza teocrática de especies alienígenas que venera a los Forerunner y sus misteriosos "Anillos Sagrados".</p>
+              <p>El protagonista principal es el Jefe Maestro (Master Chief), un supersoldado genéticamente mejorado que lucha para salvar a la humanidad de múltiples amenazas.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/ef/b9/ce/efb9ce7e2cbfaa40b437060d263fa8d9.jpg" alt="Master Chief" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/3453432.jpg" alt="Covenant" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-4">
+              <p>El Covenant es una alianza teocrática de especies alienígenas que buscan activar los anillos Halo, sin comprender su verdadero propósito como arma galáctica.</p>
+              <p>Los juegos combinan elementos de shooter en primera persona con narrativa épica, vehículos y combate multijugador.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://www.somosxbox.com/wp-content/uploads/2020/02/HaloInfinite.jpg" alt="Anillo Halo" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <p class="lead mt-4">
+            <a href="https://www.halopedia.org/" target="_blank" class="btn btn-lg btn-halo">Explorar el Universo Halo en Halopedia</a>
+          </p>
+        </section>
+
+        <!-- Sección Contenido Destacado -->
+        <section id="destacado" class="content-section">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Juegos Principales</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Halo: Combat Evolved (2001) - El juego que inició la franquicia</li>
+                <li class="list-group-item">Halo 2 (2004) - Introdujo el juego en línea en Xbox Live</li>
+                <li class="list-group-item">Halo 3 (2007) - Conclusión de la trilogía original</li>
+                <li class="list-group-item">Halo Wars (2009) - Primer juego de estrategia en tiempo real</li>
+                <li class="list-group-item">Halo 3: ODST (2009) - Perspectiva de soldados regulares</li>
+                <li class="list-group-item">Halo: Reach (2010) - Precuela que muestra la caída de Reach</li>
+                <li class="list-group-item">Halo 4 (2012) - Primera entrega desarrollada por 343 Industries</li>
+                <li class="list-group-item">Halo 5: Guardians (2015) - Introdujo el escuadrón Fireteam Osiris</li>
+                <li class="list-group-item">Halo Infinite (2021) - Última entrega principal</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Personajes Iconicos</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
+                  <a href="Master%20Chief.html" class="text-success">Master Chief (John-117) - Protagonista principal</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Cortana.html" class="text-success">Cortana - IA compañera del Jefe Maestro</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="El%20Inquisidor.html" class="text-success">El Inquisidor (Thel 'Vadam) - Aliado clave</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Dra.%20Halsey.html" class="text-success">Dra. Halsey - Creadora del programa SPARTAN-II</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Escharum.html" class="text-success">Escharum - Antagonista principal en Halo Infinite</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <h3>Línea de Tiempo de la Saga</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Año</th>
+                    <th>Evento</th>
+                    <th>Juego/Medio</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2525</td>
+                    <td>Inicio de la Guerra Humano-Covenant</td>
+                    <td>Halo Wars</td>
+                    <td>El Covenant ataca las colonias humanas exteriores</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Caída de Reach</td>
+                    <td>Halo: Reach</td>
+                    <td>El planeta Reach es destruido por el Covenant</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Descubrimiento del Instalación 04</td>
+                    <td>Halo: Combat Evolved</td>
+                    <td>El Jefe Maestro descubre el primer anillo Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla por la Tierra</td>
+                    <td>Halo 2</td>
+                    <td>El Covenant ataca la Tierra mientras el Jefe viaja a Delta Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla del Arca</td>
+                    <td>Halo 3</td>
+                    <td>El Jefe y el Inquisidor detienen al Profeta de la Verdad</td>
+                  </tr>
+                  <tr>
+                    <td>2557</td>
+                    <td>Despertar en Requiem</td>
+                    <td>Halo 4</td>
+                    <td>El Jefe despierta después de 4 años en el espacio</td>
+                  </tr>
+                  <tr>
+                    <td>2558</td>
+                    <td>Activación de los Guardianes</td>
+                    <td>Halo 5: Guardians</td>
+                    <td>Cortana reaparece con una nueva filosofía de gobierno</td>
+                  </tr>
+                  <tr>
+                    <td>2560</td>
+                    <td>Batalla de Zeta Halo</td>
+                    <td>Halo Infinite</td>
+                    <td>El Jefe se enfrenta a los Desterrados en un anillo dañado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Multimedia -->
+        <section id="multimedia" class="content-section">
+          <h2>Multimedia</h2>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Tráiler de Halo Infinite</h3>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/PyMlV5_HRWk" title="Halo Infinite Trailer" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Galería de Imágenes</h3>
+              <div id="haloCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGdPb4ux0Vh-pdgIM4FDbXetjjUJGmoISZA&s" class="d-block w-100" alt="Master Chief">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.redd.it/the-flood-from-halo-1-are-my-favorite-incarnation-the-v0-mbm8bsly9q6e1.jpg?width=2560&format=pjpg&auto=webp&s=8d3c17670c3bc99546c41b8f9b800a3ea7cf13be<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Descripción" content="Portada del Proyecto">
+    <meta name="author" content="CONDE CORPUS JOSE DANIEL">
+    <meta name="author" content="ESQUIVEL ORTIZ SEBASTIAN">
+    <title>HALO - Portada</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/halo" rel="stylesheet">
+    <style>
+      body {
+        background-size: cover;
+        background-image: url("https://images.hdqwalls.com/wallpapers/halo-infinite-4k-2020-5k.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+      }
+
+      h1 {
+        color: white;
+        font-size: 70px;
+        font-family: "Tourney", sans-serif;
+        font-weight: 300;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      h2, h3 {
+        font-family: 'Halo', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #00ff00;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .content-section {
+        background-color: rgba(110, 110, 110, 0.60);
+        border-radius: 40px;
+        box-shadow: 10px 10px rgba(0, 56, 0, 0.397);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .img-thumbnail {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        margin: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .img-thumbnail:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+      }
+
+      .nav-link {
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #0f0 !important;
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+      }
+
+      .btn-halo {
+        background-color: rgba(0, 56, 0, 0.7);
+        border: 1px solid #0f0;
+        color: white;
+        transition: all 0.3s;
+      }
+
+      .btn-halo:hover {
+        background-color: rgba(0, 100, 0, 0.9);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+      }
+
+      table {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      table th {
+        background-color: rgba(0, 56, 0, 0.7);
+      }
+
+      table tr:nth-child(even) {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      table tr:hover {
+        background-color: rgba(0, 80, 0, 0.5);
+      }
+
+      .list-group-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .list-group-item:hover {
+        background-color: rgba(0, 56, 0, 0.5);
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 100px 0;
+        margin: 3rem 0;
+      }
+
+      .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .typewriter h2 {
+        overflow: hidden;
+        border-right: .15em solid #0f0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #0f0; }
+      }
+
+      .personajes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .personaje {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+      }
+
+      .personaje-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <a><h1 class="pulse-animation">HALO</h1></a>
+        <div>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0" href="Referencias.html">Referencias</a>
+            <a class="nav-link fw-bold py-1 px-0" href="Contactos.html">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-1">
+        <!-- Sección Portada -->
+        <section id="portada" class="content-section fade-in">
+          <div class="typewriter">
+            <h2>Bienvenido al Universo de Halo</h2>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <p>Halo es una saga de videojuegos de ciencia ficción desarrollada originalmente por Bungie Studios y actualmente por 343 Industries, publicada por Microsoft Studios.</p>
+              <p>La serie se centra en un conflicto futurista entre humanos y el Covenant, una alianza teocrática de especies alienígenas que venera a los Forerunner y sus misteriosos "Anillos Sagrados".</p>
+              <p>El protagonista principal es el Jefe Maestro (Master Chief), un supersoldado genéticamente mejorado que lucha para salvar a la humanidad de múltiples amenazas.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/ef/b9/ce/efb9ce7e2cbfaa40b437060d263fa8d9.jpg" alt="Master Chief" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/3453432.jpg" alt="Covenant" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-4">
+              <p>El Covenant es una alianza teocrática de especies alienígenas que buscan activar los anillos Halo, sin comprender su verdadero propósito como arma galáctica.</p>
+              <p>Los juegos combinan elementos de shooter en primera persona con narrativa épica, vehículos y combate multijugador.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://www.somosxbox.com/wp-content/uploads/2020/02/HaloInfinite.jpg" alt="Anillo Halo" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <p class="lead mt-4">
+            <a href="https://www.halopedia.org/" target="_blank" class="btn btn-lg btn-halo">Explorar el Universo Halo en Halopedia</a>
+          </p>
+        </section>
+
+        <!-- Sección Contenido Destacado -->
+        <section id="destacado" class="content-section">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Juegos Principales</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Halo: Combat Evolved (2001) - El juego que inició la franquicia</li>
+                <li class="list-group-item">Halo 2 (2004) - Introdujo el juego en línea en Xbox Live</li>
+                <li class="list-group-item">Halo 3 (2007) - Conclusión de la trilogía original</li>
+                <li class="list-group-item">Halo Wars (2009) - Primer juego de estrategia en tiempo real</li>
+                <li class="list-group-item">Halo 3: ODST (2009) - Perspectiva de soldados regulares</li>
+                <li class="list-group-item">Halo: Reach (2010) - Precuela que muestra la caída de Reach</li>
+                <li class="list-group-item">Halo 4 (2012) - Primera entrega desarrollada por 343 Industries</li>
+                <li class="list-group-item">Halo 5: Guardians (2015) - Introdujo el escuadrón Fireteam Osiris</li>
+                <li class="list-group-item">Halo Infinite (2021) - Última entrega principal</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Personajes Iconicos</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
+                  <a href="Master%20Chief.html" class="text-success">Master Chief (John-117) - Protagonista principal</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Cortana.html" class="text-success">Cortana - IA compañera del Jefe Maestro</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="El%20Inquisidor.html" class="text-success">El Inquisidor (Thel 'Vadam) - Aliado clave</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Dra.%20Halsey.html" class="text-success">Dra. Halsey - Creadora del programa SPARTAN-II</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Escharum.html" class="text-success">Escharum - Antagonista principal en Halo Infinite</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <h3>Línea de Tiempo de la Saga</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Año</th>
+                    <th>Evento</th>
+                    <th>Juego/Medio</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2525</td>
+                    <td>Inicio de la Guerra Humano-Covenant</td>
+                    <td>Halo Wars</td>
+                    <td>El Covenant ataca las colonias humanas exteriores</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Caída de Reach</td>
+                    <td>Halo: Reach</td>
+                    <td>El planeta Reach es destruido por el Covenant</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Descubrimiento del Instalación 04</td>
+                    <td>Halo: Combat Evolved</td>
+                    <td>El Jefe Maestro descubre el primer anillo Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla por la Tierra</td>
+                    <td>Halo 2</td>
+                    <td>El Covenant ataca la Tierra mientras el Jefe viaja a Delta Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla del Arca</td>
+                    <td>Halo 3</td>
+                    <td>El Jefe y el Inquisidor detienen al Profeta de la Verdad</td>
+                  </tr>
+                  <tr>
+                    <td>2557</td>
+                    <td>Despertar en Requiem</td>
+                    <td>Halo 4</td>
+                    <td>El Jefe despierta después de 4 años en el espacio</td>
+                  </tr>
+                  <tr>
+                    <td>2558</td>
+                    <td>Activación de los Guardianes</td>
+                    <td>Halo 5: Guardians</td>
+                    <td>Cortana reaparece con una nueva filosofía de gobierno</td>
+                  </tr>
+                  <tr>
+                    <td>2560</td>
+                    <td>Batalla de Zeta Halo</td>
+                    <td>Halo Infinite</td>
+                    <td>El Jefe se enfrenta a los Desterrados en un anillo dañado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Multimedia -->
+        <section id="multimedia" class="content-section">
+          <h2>Multimedia</h2>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Tráiler de Halo Infinite</h3>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/PyMlV5_HRWk" title="Halo Infinite Trailer" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Galería de Imágenes</h3>
+              <div id="haloCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGdPb4ux0Vh-pdgIM4FDbXetjjUJGmoISZA&s" class="d-block w-100" alt="Master Chief">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.redd.it/the-flood-from-halo-1-are-my-favorite-incarnation-the-v0-mbm8bsly9q6e1.jpg?width=2560&format=pjpg&auto=webp&s=8d3c17670c3bc99546c41b8f9b800a3ea7cf13be<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Descripción" content="Portada del Proyecto">
+    <meta name="author" content="CONDE CORPUS JOSE DANIEL">
+    <meta name="author" content="ESQUIVEL ORTIZ SEBASTIAN">
+    <title>HALO - Portada</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/halo" rel="stylesheet">
+    <style>
+      body {
+        background-size: cover;
+        background-image: url("https://images.hdqwalls.com/wallpapers/halo-infinite-4k-2020-5k.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        font-family: "Press Start 2P", system-ui;
+      }
+
+      h1 {
+        color: white;
+        font-size: 70px;
+        font-family: "Tourney", sans-serif;
+        font-weight: 300;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      h2, h3 {
+        font-family: 'Halo', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #00ff00;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .content-section {
+        background-color: rgba(110, 110, 110, 0.60);
+        border-radius: 40px;
+        box-shadow: 10px 10px rgba(0, 56, 0, 0.397);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .img-thumbnail {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        margin: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .img-thumbnail:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+      }
+
+      .nav-link {
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #0f0 !important;
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+      }
+
+      .btn-halo {
+        background-color: rgba(0, 56, 0, 0.7);
+        border: 1px solid #0f0;
+        color: white;
+        transition: all 0.3s;
+      }
+
+      .btn-halo:hover {
+        background-color: rgba(0, 100, 0, 0.9);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+      }
+
+      table {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      table th {
+        background-color: rgba(0, 56, 0, 0.7);
+      }
+
+      table tr:nth-child(even) {
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      table tr:hover {
+        background-color: rgba(0, 80, 0, 0.5);
+      }
+
+      .list-group-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .list-group-item:hover {
+        background-color: rgba(0, 56, 0, 0.5);
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .fade-in {
+        animation: fadeIn 1.5s ease-in;
+      }
+
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 100px 0;
+        margin: 3rem 0;
+      }
+
+      .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .typewriter h2 {
+        overflow: hidden;
+        border-right: .15em solid #0f0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #0f0; }
+      }
+
+      .personajes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .personaje {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+      }
+
+      .personaje-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <a><h1 class="pulse-animation">HALO</h1></a>
+        <div>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0" href="Referencias.html">Referencias</a>
+            <a class="nav-link fw-bold py-1 px-0" href="Contactos.html">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-1">
+        <!-- Sección Portada -->
+        <section id="portada" class="content-section fade-in">
+          <div class="typewriter">
+            <h2>Bienvenido al Universo de Halo</h2>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <p>Halo es una saga de videojuegos de ciencia ficción desarrollada originalmente por Bungie Studios y actualmente por 343 Industries, publicada por Microsoft Studios.</p>
+              <p>La serie se centra en un conflicto futurista entre humanos y el Covenant, una alianza teocrática de especies alienígenas que venera a los Forerunner y sus misteriosos "Anillos Sagrados".</p>
+              <p>El protagonista principal es el Jefe Maestro (Master Chief), un supersoldado genéticamente mejorado que lucha para salvar a la humanidad de múltiples amenazas.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/ef/b9/ce/efb9ce7e2cbfaa40b437060d263fa8d9.jpg" alt="Master Chief" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/3453432.jpg" alt="Covenant" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-md-4">
+              <p>El Covenant es una alianza teocrática de especies alienígenas que buscan activar los anillos Halo, sin comprender su verdadero propósito como arma galáctica.</p>
+              <p>Los juegos combinan elementos de shooter en primera persona con narrativa épica, vehículos y combate multijugador.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://www.somosxbox.com/wp-content/uploads/2020/02/HaloInfinite.jpg" alt="Anillo Halo" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+          
+          <p class="lead mt-4">
+            <a href="https://www.halopedia.org/" target="_blank" class="btn btn-lg btn-halo">Explorar el Universo Halo en Halopedia</a>
+          </p>
+        </section>
+
+        <!-- Sección Contenido Destacado -->
+        <section id="destacado" class="content-section">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Juegos Principales</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Halo: Combat Evolved (2001) - El juego que inició la franquicia</li>
+                <li class="list-group-item">Halo 2 (2004) - Introdujo el juego en línea en Xbox Live</li>
+                <li class="list-group-item">Halo 3 (2007) - Conclusión de la trilogía original</li>
+                <li class="list-group-item">Halo Wars (2009) - Primer juego de estrategia en tiempo real</li>
+                <li class="list-group-item">Halo 3: ODST (2009) - Perspectiva de soldados regulares</li>
+                <li class="list-group-item">Halo: Reach (2010) - Precuela que muestra la caída de Reach</li>
+                <li class="list-group-item">Halo 4 (2012) - Primera entrega desarrollada por 343 Industries</li>
+                <li class="list-group-item">Halo 5: Guardians (2015) - Introdujo el escuadrón Fireteam Osiris</li>
+                <li class="list-group-item">Halo Infinite (2021) - Última entrega principal</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Personajes Iconicos</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
+                  <a href="Master%20Chief.html" class="text-success">Master Chief (John-117) - Protagonista principal</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Cortana.html" class="text-success">Cortana - IA compañera del Jefe Maestro</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="El%20Inquisidor.html" class="text-success">El Inquisidor (Thel 'Vadam) - Aliado clave</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Dra.%20Halsey.html" class="text-success">Dra. Halsey - Creadora del programa SPARTAN-II</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="Escharum.html" class="text-success">Escharum - Antagonista principal en Halo Infinite</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <h3>Línea de Tiempo de la Saga</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Año</th>
+                    <th>Evento</th>
+                    <th>Juego/Medio</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2525</td>
+                    <td>Inicio de la Guerra Humano-Covenant</td>
+                    <td>Halo Wars</td>
+                    <td>El Covenant ataca las colonias humanas exteriores</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Caída de Reach</td>
+                    <td>Halo: Reach</td>
+                    <td>El planeta Reach es destruido por el Covenant</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Descubrimiento del Instalación 04</td>
+                    <td>Halo: Combat Evolved</td>
+                    <td>El Jefe Maestro descubre el primer anillo Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla por la Tierra</td>
+                    <td>Halo 2</td>
+                    <td>El Covenant ataca la Tierra mientras el Jefe viaja a Delta Halo</td>
+                  </tr>
+                  <tr>
+                    <td>2552</td>
+                    <td>Batalla del Arca</td>
+                    <td>Halo 3</td>
+                    <td>El Jefe y el Inquisidor detienen al Profeta de la Verdad</td>
+                  </tr>
+                  <tr>
+                    <td>2557</td>
+                    <td>Despertar en Requiem</td>
+                    <td>Halo 4</td>
+                    <td>El Jefe despierta después de 4 años en el espacio</td>
+                  </tr>
+                  <tr>
+                    <td>2558</td>
+                    <td>Activación de los Guardianes</td>
+                    <td>Halo 5: Guardians</td>
+                    <td>Cortana reaparece con una nueva filosofía de gobierno</td>
+                  </tr>
+                  <tr>
+                    <td>2560</td>
+                    <td>Batalla de Zeta Halo</td>
+                    <td>Halo Infinite</td>
+                    <td>El Jefe se enfrenta a los Desterrados en un anillo dañado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Multimedia -->
+        <section id="multimedia" class="content-section">
+          <h2>Multimedia</h2>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Tráiler de Halo Infinite</h3>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/PyMlV5_HRWk" title="Halo Infinite Trailer" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Galería de Imágenes</h3>
+              <div id="haloCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGdPb4ux0Vh-pdgIM4FDbXetjjUJGmoISZA&s" class="d-block w-100" alt="Master Chief">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.redd.it/the-flood-from-halo-1-are-my-favorite-incarnation-the-v0-mbm8bsly9q6e1.jpg?width=2560&format=pjpg&auto=webp&s=8d3c17670c3bc99546c41b8f9b800a3ea7cf13be
