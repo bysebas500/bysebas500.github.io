@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 03 | Actividad No. 03-1</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Sebastián Esquivel Ortiz">
+    <meta name="Fecha" content="Miércoles 30 de Abril de 2025">
+    <meta name="Resumen" content="JavaScript">
+    <link rel="stylesheet" type="text/css" href="Actividad_03-1.css">
+</head>
+<body>
+    <h1>Unidad 03 | Actividad 03-1 | Tema: JavaScript</h1>
+    <script>
+        let opc;
+
+        do {
+            opc = Number(window.prompt("Dame un valor valido (entre 1 y 10):"));
+        } while (opc < 1 || opc > 10);
+    </script>
+    <table>
+        <tr align="center">
+            <th>No.</th>
+            <th>Suma</th>
+            <th>Multiplicación</th>
+        </tr>
+        <script>
+            // Loop to generate table rows dynamically
+            for (let i = 1; i <= 10; i++) {
+                document.write('<tr align="center">');
+                document.write('<td>' + i + '</td>');
+                document.write('<td>');
+                document.write('<code>' + opc + ' + ' + i + ' = ' + (opc + i) + '</code>');
+                document.write('</td>');
+                document.write('<td>');
+                document.write('<code>' + opc + ' * ' + i + ' = ' + (opc * i) + '</code>');
+                document.write('</td>');
+                document.write('</tr>');
+            }
+        </script>
+    </table>
+</body>
+</html>
