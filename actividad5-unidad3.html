@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 3 | Actividad 05</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Author" content="Sebastián Esquivel Ortiz">
+    <meta name="Fecha" content="07 de mayo de 2025">
+    <meta name="Descripción" content="Formulario">
+    <script>
+        function revision_formulario() {
+            let varCadena = "Revisión de formulario\n";
+            let varCampo = document.getElementById("txtNombre");
+            varCadena += "Nombre de usuario: " + varCampo.value + "\n";
+            let varForm_elementos = document.getElementById("Formulario").elements;
+            for (let varX = 0; varX < varForm_elementos.length; varX++) {
+                varCadena += varForm_elementos[varX].value + "\n";
+            }
+            varCadena += varForm_elementos["txtCorreo"].value + "\n";
+            varCadena += varForm_elementos["txtMensaje"].value;
+            alert(varCadena);
+        }
+    </script>
+</head>
+<body>
+    <h3>Unidad 3 | Actividad 05 :: Tema (Formulario)</h3>
+
+    <form id="Formulario" class="form-horizontal" name="formRegistro" action="#" method="post">
+        <fieldset>
+            <legend>Registro de Usuario</legend>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtNombre">Nombre de Usuario</label>
+                <div class="col-md-4">
+                    <input id="txtNombre" name="txtNombre" type="text" placeholder="Juan Díaz García" class="form-control input-md" required="">
+                    <span class="help-block">Escribe tu nombre completo.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtPassword">Password</label>
+                <div class="col-md-4">
+                    <input id="txtPassword" name="txtPassword" type="password" placeholder="********" class="form-control input-md" required="">
+                    <span class="help-block">Debe tener al menos 8 símbolos (únicamente letras y dígitos)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtTelefono">Teléfono</label>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-addon">+52</span>
+                        <input id="txtTelefono" name="txtTelefono" class="form-control" placeholder="(444) 123 4567" type="text">
+                    </div>
+                    <span class="help-block"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtCorreo">Correo electrónico</label>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-addon">@upslp.edu.mx</span>
+                        <input id="txtCorreo" name="txtCorreo" class="form-control" placeholder="ejemplo" type="text" required="">
+                    </div>
+                    <span class="help-block"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtMensaje">Mensaje</label>
+                <div class="col-md-4">
+                    <textarea class="form-control" id="txtMensaje" name="txtMensaje">Escribe tu mensaje.</textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="btnEnviar"></label>
+                <div class="col-md-4">
+                    <button id="btnEnviar" name="btnEnviar" class="btn btn-success" type="button" onclick="revision_formulario()">Enviar</button>
+                    <button id="btnBorrar" name="btnBorrar" class="btn btn-danger" type="reset">Borrar</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
