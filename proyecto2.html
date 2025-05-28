@@ -395,15 +395,48 @@
         </section>
       </main>
 
-      <footer class="mt-auto text-white-50">
-        <p class="mb-0">Proyecto académico sin fines comerciales</p>
-        <p class="mb-0">© 2024 CONDE CORPUS JOSE DANIEL - ESQUIVEL ORTIZ SEBASTIÁN</p>
+     <footer class="mt-auto text-white-50">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Proyecto De Programación Web I</p>
+            <p>© 2025 CONDE CORPUS JOSE DANIEL</p>
+            <p>© 2025 ESQUIVEL ORTIZ SEBASTIAN</p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <a href="#portada" class="text-white">Portada</a> | 
+              <a href="#destacado" class="text-white">Contenido</a> | 
+              <a href="#multimedia" class="text-white">Multimedia</a> | 
+              <a href="#enlaces" class="text-white">Enlaces</a>
+            </p>
+            <p>
+              <small>Este sitio es un proyecto académico y no está afiliado con Microsoft o 343 Industries.</small>
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
 
-    <!-- Scripts de Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- Scripts de Bootstrap y personalizados -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Efecto de scroll suave
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Efecto de carga para elementos
+      document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach((el, index) => {
+          el.style.animationDelay = ${index * 0.2}s;
+        });
+      });
+    </script>
   </body>
 </html>
